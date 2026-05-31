@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: portfolio-api
+    env: python
+    plan: free
+    rootDir: backend
+
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+
+    envVars:
+      # NOTE: After deploying to Vercel, replace the value below with your actual Vercel URL.
+      # Example: https://hau-portfolio.vercel.app
+      # If you have a custom domain, add it here too (comma-separated).
+      - key: ALLOWED_ORIGINS
+        value: https://YOUR-VERCEL-DOMAIN.vercel.app
+
+      # NOTE: Required for contact form emails to work.
+      # Sign up at https://resend.com, get your API key, and set it here.
+      - key: RESEND_API_KEY
+        value: re_YOUR_RESEND_API_KEY_HERE
+
+      # The inbox where contact form messages will be delivered.
+      - key: MAIL_TO
+        value: hauranhafidh959@gmail.com
+
+      # Must be a verified sender domain in your Resend account.
+      # The default onboarding@resend.dev only works for test emails to your own address.
+      # For production, verify your domain at resend.com/domains and use: noreply@yourdomain.com
+      - key: MAIL_FROM
+        value: onboarding@resend.dev

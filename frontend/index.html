@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- EDIT: name, title, description -->
+<title>Hauran Hafidh | Data Scientist &amp; Statistician</title>
+<meta name="description" content="Portfolio of Amani Hassan — Data Scientist & Statistician building ML models, dashboards and data-driven products." />
+<meta name="author" content="Amani Hassan" />
+
+<meta property="og:title" content="Amani Hassan | Data Scientist" />
+<meta property="og:description" content="Machine learning, statistics, and beautiful dashboards." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+
+<script>
+  // NOTE: Replace this URL with your actual Render backend URL after deploying.
+  // Example: window.API_BASE = "https://portfolio-api.onrender.com";
+  // The URL below matches the hardcoded fallback already in js/main.js — update BOTH if your Render URL differs.
+  window.API_BASE = "https://data-science-portfolio-ve6v.onrender.com";
+</script>
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<!-- ============= NAV ============= -->
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">HAURAN</a>
+    <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <i class="bi bi-list fs-3 text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-neon ms-lg-2">Let's Talk</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============= HERO ============= -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7" data-anim="left">
+        <span class="hero-badge"><span class="dot"></span> Open to opportunities</span>
+        <h1>
+          Hi, I'm <span class="grad">Hauran Hafidh</span><br/>
+          a <span id="typed"></span><span class="typed-cursor">&nbsp;</span>
+        </h1>
+        <p class="lead">
+          I turn messy data into clear decisions. I build machine-learning models,
+          run rigorous statistical analyses, and ship dashboards that people actually use.
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="#projects" class="btn btn-neon"><i class="bi bi-rocket-takeoff me-1"></i> View Projects</a>
+          <a href="#contact" class="btn btn-ghost"><i class="bi bi-chat-dots me-1"></i> Get in Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong>3+</strong><span>Years of Practice</span></div>
+          <div class="hero-stat"><strong>6+</strong><span>Projects Delivered</span></div>
+          <div class="hero-stat"><strong>7+</strong><span>Tools Mastered</span></div>
+        </div>
+      </div>
+      <div class="col-lg-5" data-anim="scale">
+        <div class="profile-photo-wrap">
+          <div class="profile-photo">
+            <span class="ring"></span>
+            <img src="images/hau_image.jpeg" alt="Hauran Hafidh" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= ABOUT ============= -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="text-center" data-anim>
+      <div class="section-title">About</div>
+      <h2 class="section-heading">Who <span class="grad">she</span> is</h2>
+      <p class="section-sub">A data scientist passionate about statistics, machine learning, and human-centred analytics.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-anim>
+        <div class="about-card h-100">
+          <div class="contact-icon mb-3"><i class="bi bi-graph-up-arrow"></i></div>
+          <h3>Statistical Rigour</h3>
+          <p>Hypothesis testing, regression, Bayesian methods and experimental design — done right.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-anim>
+        <div class="about-card h-100">
+          <div class="contact-icon mb-3"><i class="bi bi-cpu"></i></div>
+          <h3>Machine Learning</h3>
+          <p>From scikit-learn baselines to deep learning with PyTorch, deployed end-to-end via FastAPI.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-anim>
+        <div class="about-card h-100">
+          <div class="contact-icon mb-3"><i class="bi bi-bar-chart-line"></i></div>
+          <h3>Storytelling</h3>
+          <p>Interactive dashboards in Power BI, Plotly and Streamlit that turn data into action.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= SKILLS ============= -->
+<section class="section" id="skills" style="background: linear-gradient(180deg, transparent, rgba(20,26,58,.4), transparent);">
+  <div class="container">
+    <div class="text-center" data-anim>
+      <div class="section-title">Skills</div>
+      <h2 class="section-heading">Tools of the <span class="grad">trade</span></h2>
+      <p class="section-sub">A pragmatic stack for the full data-science lifecycle — from collection to deployment.</p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-lg-6" data-anim="left">
+        <div class="skill-cat-title">Programming &amp; Data</div>
+        <div class="skill-label"><span>Python</span><span>92%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+        <div class="skill-label"><span>R</span><span>82%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+        <div class="skill-label"><span>SQL</span><span>85%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+
+        <div class="skill-cat-title">Machine Learning</div>
+        <div class="skill-label"><span>scikit-learn / XGBoost</span><span>88%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        <div class="skill-label"><span>PyTorch / TensorFlow</span><span>75%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+      </div>
+
+      <div class="col-lg-6" data-anim="right">
+        <div class="skill-cat-title">Visualisation &amp; BI</div>
+        <div class="skill-label"><span>Power BI</span><span>86%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="86"></div></div>
+        <div class="skill-label"><span>Plotly / Seaborn</span><span>90%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        <div class="skill-label"><span>Streamlit</span><span>80%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+
+        <div class="skill-cat-title">Engineering &amp; Web</div>
+        <div class="skill-label"><span>FastAPI</span><span>75%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        <div class="skill-label"><span>HTML / CSS / Bootstrap / JS</span><span>78%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-badges justify-content-center mt-5" data-anim>
+      <span class="skill-badge"><i class="bi bi-filetype-py"></i> Pandas</span>
+      <span class="skill-badge"><i class="bi bi-diagram-3"></i> NumPy</span>
+      <span class="skill-badge"><i class="bi bi-lightning-charge"></i> XGBoost</span>
+      <span class="skill-badge"><i class="bi bi-robot"></i> HuggingFace</span>
+      <span class="skill-badge"><i class="bi bi-database"></i> PostgreSQL</span>
+      <span class="skill-badge"><i class="bi bi-cloud"></i> Docker</span>
+      <span class="skill-badge"><i class="bi bi-git"></i> Git / GitHub</span>
+      <span class="skill-badge"><i class="bi bi-window"></i> Google colab</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============= EXPERIENCE ============= -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="text-center" data-anim>
+      <div class="section-title">Journey</div>
+      <h2 class="section-heading">Experience &amp; <span class="grad">Education</span></h2>
+      <p class="section-sub">A timeline of work, study and certifications.</p>
+    </div>
+
+    <div class="exp-tabs" data-anim>
+      <ul class="nav nav-pills" id="expTab" role="tablist">
+        <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pane-exp" type="button">Experience</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane-edu" type="button">Education</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane-cert" type="button">Certifications</button></li>
+      </ul>
+
+      <div class="tab-content mt-4">
+
+        <div class="tab-pane fade show active" id="pane-exp">
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-year">2024 – Present</span>
+              <div class="timeline-title">Data Scientist Researcher</div>
+              <div class="timeline-place">Freelance / Open-source</div>
+              <div class="timeline-desc">Building ML pipelines, conducting A/B tests and shipping dashboards for SME clients across East Africa.</div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2023 – 2024</span>
+              <div class="timeline-title">Data Analyst Intern</div>
+              <div class="timeline-place">Research &amp; NGO projects</div>
+              <div class="timeline-desc">Designed KoboToolbox surveys, cleaned and analysed datasets in Python and R, presented findings to stakeholders.</div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2024 – 2025</span>
+              <div class="timeline-title">Third Year — Data science</div>
+              <div class="timeline-place">EASTC IT Department</div>
+              <div class="timeline-desc">Supported undergraduate students with statistical theory, R programming and project supervision.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="pane-edu">
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-year">2022 – 2025</span>
+              <div class="timeline-title">BSc Data Science &amp; Statistics</div>
+              <div class="timeline-place">EASTC</div>
+              <div class="timeline-desc">Coursework: probability, Programming, machine learning, databases, time-series analysis.</div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2024 – 2025</span>
+              <div class="timeline-title">A-Level — PCM</div>
+              <div class="timeline-place">Secondary School</div>
+              <div class="timeline-desc">Physics, Chemistry, Mathematics — graduated with distinction.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="pane-cert">
+          <div class="row g-3 justify-content-center">
+            <div class="col-md-6 col-lg-4"><div class="about-card h-100 text-center">
+              <div class="contact-icon mx-auto mb-3"><i class="bi bi-patch-check"></i></div>
+              <h3>Google Data Analytics</h3>
+              <p>Professional Certificate — SQL, R, Tableau.</p>
+            </div></div>
+            <div class="col-md-6 col-lg-4"><div class="about-card h-100 text-center">
+              <div class="contact-icon mx-auto mb-3"><i class="bi bi-patch-check"></i></div>
+              <h3>IBM ML with Python</h3>
+              <p>Supervised &amp; unsupervised algorithms with scikit-learn.</p>
+            </div></div>
+            <div class="col-md-6 col-lg-4"><div class="about-card h-100 text-center">
+              <div class="contact-icon mx-auto mb-3"><i class="bi bi-patch-check"></i></div>
+              <h3>Microsoft Power BI</h3>
+              <p>Data modelling, DAX, interactive reporting.</p>
+            </div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= PROJECTS ============= -->
+<section class="section" id="projects" style="background: linear-gradient(180deg, transparent, rgba(20,26,58,.4), transparent);">
+  <div class="container">
+    <div class="text-center" data-anim>
+      <div class="section-title">Work</div>
+      <h2 class="section-heading">Featured <span class="grad">Projects</span></h2>
+      <p class="section-sub">A few things I've built recently — code &amp; case studies available on request.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" data-anim>
+        <div class="project-card">
+          <img class="project-img" src="images/projects/machine-learning.jpg" alt="" />
+          <div class="project-body">
+            <span class="project-tag">Machine Learning</span>
+            <h3 class="project-title">Customer Churn Prediction</h3>
+            <p class="project-desc">Gradient-boosted classifier achieving 89% ROC-AUC on telecom data, with SHAP explainability dashboard.</p>
+            <div class="project-stack">
+              <span class="stack-pill">Python</span><span class="stack-pill">XGBoost</span><span class="stack-pill">SHAP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-anim>
+        <div class="project-card">
+          <img class="project-img" src="images/projects/data-visualization.jpg" alt="" />
+          <div class="project-body">
+            <span class="project-tag">Data Visualisation</span>
+            <h3 class="project-title">COVID-19 Analytics Dashboard</h3>
+            <p class="project-desc">Interactive Streamlit + Plotly dashboard tracking trends across 50+ countries with ARIMA forecasting.</p>
+            <div class="project-stack">
+              <span class="stack-pill">Streamlit</span><span class="stack-pill">Plotly</span><span class="stack-pill">Pandas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-anim>
+        <div class="project-card">
+          <img class="project-img" src="images/projects/nlp.jpg" alt="" />
+          <div class="project-body">
+            <span class="project-tag">NLP</span>
+            <h3 class="project-title">Sentiment Analysis API</h3>
+            <p class="project-desc">Fine-tuned a transformer on Twitter data and deployed it as a FastAPI microservice on Render.</p>
+            <div class="project-stack">
+              <span class="stack-pill">PyTorch</span><span class="stack-pill">HuggingFace</span><span class="stack-pill">FastAPI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= CONTACT ============= -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="text-center" data-anim>
+      <div class="section-title">Contact</div>
+      <h2 class="section-heading">Let's build something <span class="grad">together</span></h2>
+      <p class="section-sub">Open to internships, freelance work and collaborations. I usually respond within 24 hours.</p>
+    </div>
+
+    <div class="contact-wrap" data-anim>
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="row g-3">
+            <div class="col-12"><div class="contact-card">
+              <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+              <div><div class="contact-label">Email</div>
+                <p class="contact-value"><a href="mailto:amani@example.com">hauranhafidh959@gmail.com</a></p></div>
+            </div></div>
+            <div class="col-12"><div class="contact-card">
+              <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+              <div><div class="contact-label">Phone</div>
+                <p class="contact-value"><a href="tel:+255000000000">+255 679 382 786</a></p></div>
+            </div></div>
+            <div class="col-12"><div class="contact-card">
+              <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+              <div><div class="contact-label">Location</div>
+                <p class="contact-value">Zanzibar, Tanzania</p></div>
+            </div></div>
+          </div>
+
+          <div class="mt-4">
+            <!-- NOTE: Replace the href values below with your actual GitHub, LinkedIn, and Twitter/X profile URLs -->
+            <a href="https://github.com/hauranhafidh959" class="social-btn"><i class="bi bi-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/hauranhafidh" class="social-btn"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            <a href="https://twitter.com/hauranhafidh" class="social-btn"><i class="bi bi-twitter-x"></i> Twitter</a>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Name</label>
+                <input name="name" class="form-control" placeholder="Your name" required />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input name="email" type="email" class="form-control" placeholder="you@email.com" required />
+              </div>
+              <div class="col-12">
+                <label class="form-label">Subject</label>
+                <input name="subject" class="form-control" placeholder="What's this about?" />
+              </div>
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea name="message" rows="5" class="form-control" placeholder="Tell me about your project..." required></textarea>
+              </div>
+              <div class="col-12 d-flex align-items-center gap-3">
+                <button type="submit" class="btn btn-neon"><i class="bi bi-send me-1"></i> Send message</button>
+                <span id="formStatus" class="form-status"></span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    &copy; <span id="year"></span> <span class="grad">Hauran Hafidh</span> · Crafted with data &amp; love.
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
