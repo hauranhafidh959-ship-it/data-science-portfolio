@@ -11,7 +11,7 @@
 // ---------- CONFIG ----------
 // NOTE: This fallback is used only if window.API_BASE is not set in index.html.
 // Keep this in sync with the window.API_BASE value in index.html.
-const API_BASE = window.API_BASE || "https://data-science-portfolio-ve6v.onrender.com";
+const API_BASE = window.API_BASE || "https://data-science-portfolio-tt7r.onrender.com";
 
 // ---------- STICKY NAV ----------
 const nav = document.querySelector(".navbar-custom");
